@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>极速快跑</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<!-- header start -->
+<div class="header"></div>
+<!-- header end -->
+
+<!-- game board start -->
+<div class="board">
+	<div class="cheerteam"></div>
+	<div class="runway">
+		<ul id="runway"></ul>
+	</div>
+</div>
+<!-- game board end -->
+
+<!-- footer start -->
+<div class="footer">
+	<div class="playerlist">
+		<ul id="playerlist"></ul>
+		<div class="tips"><textarea readonly>游戏玩法：
+1.跑道中共有8名选手，首先先选出一位你喜欢的选手。
+2.比赛开始后，可以通过“GO”帮选手打气，提高选手的速度。
+3.当你选中的选手第一个到达终点，则为胜利。</textarea></div>
+	</div>
+	<div class="btn">
+		<div class="level">请选择难度:<select id="level">
+						<option value="1">低</option>
+						<option value="2" selected="selected">中</option>
+						<option value="3">高</option>
+						</select>
+		</div>
+		<div class="start_btn none" id="start_btn"></div>
+		<div class="go_btn none" id="go_btn"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- footer end -->
+
+</body>
+</html>

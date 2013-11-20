@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>仙剑翻牌</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/common.js" /></script>
+<script type="text/javascript" src="js/main.js" /></script>
+</head>
+
+<body>
+
+<!-- board start -->
+<div class="board">
+
+    <!-- top plane start -->
+    <div class="topplane">
+        <div class="levelplane" id="levelplane">LEVEL <span id="level"></span></div>
+        <div class="process" id="process">
+            <div class="timeplane" id="timeplane">剩余时间: <span id="livetime"></span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- top plane end -->
+
+    <!-- game plane start -->
+    <div class="gameplane" id="gameplane"></div>
+    <!-- game plane end -->
+
+    <!-- footer plane start -->
+    <div class="footer">Author:<span class="hilite">fdipzone</span> Ver:<span class="hilite">1.0</span></div>
+    <!-- footer plane end -->
+
+    <!-- game tips start -->
+    <div class="tips" id="tips">
+        <p class="title">《仙剑翻牌》游戏玩法：</p>
+        <p>1.游戏随机从42张牌中抽取9张进行游戏，每组为2张相同的牌，共18张牌。<p>
+        <p>2.连续翻到两张相同的为胜利，当9组全部翻到则过关。如不是翻到连续两张相同的，则需要重新翻。</p>
+        <p>3.游戏共有10关，在规定时间内通过为挑战成功。</p>
+        <p>4.如果某关在规定时间内没有通过，则会从当前关继续游戏。</p>
+        <p>5.游戏中卡牌图片与音乐版权均为大宇资讯所有。</p>
+        <p class="btn"><a href="javascript:void(0)" id="startgame">开始游戏</a></p>
+    </div>
+    <!-- game tips end -->
+
+    <!-- game message start -->
+    <div class="message_start" id="message"></div>
+    <!-- game message end -->
+
+    <div class="clear"></div>
+
+</div>
+<!-- board end -->
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>宇宙战机</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<!-- board start -->
+<div class="board">
+
+    <!-- header start -->
+    <div class="header"></div>
+    <!-- header end -->
+
+    <!-- game plane start -->
+    <div class="gameplane bg0" id="gameplane">
+        <div class="op" id="op">
+            <div class="logo"></div>
+            <div class="info">Press <span>Enter</span> Start Game</div>
+        </div>
+        <div class="gameover" id="gameover">
+            <div class="tit">Game Over</div>
+            <div class="con" id="overcon"></div>
+        </div>
+        <div class="gameclear" id="gameclear">
+            <div class="tit">Congratulation</div>
+            <div class="con" id="clearcon"></div>
+        </div>
+        <div class="level" id="level"></div>
+        <div class="fighter" id="fighter"></div>
+        <div class="bomb" id="bomb"></div>
+    </div>
+    <!-- game plane end -->
+
+    <!-- side plane start -->
+    <div class="sideplane">
+        <div class="score">
+            <p>HI-SCORE:<span class="hilite" id="hiscore">10000</span></p>
+            <p>SCORE:<span class="hilite" id="score">0</span></p>
+            <p class="fighternum"><span class="nor" id="fighternum">3</span></p>
+            <p class="bombnum"><span class="nor" id="bombnum">3</span></p>
+            <p class="clear"></p>
+        </div>
+        <div class="tips">
+            <p class="title">游戏操作</p>
+            <p class="con">
+                <ul>
+                    <li class="key up">↑</li>
+                    <li class="clear"></li>
+                    <li class="key">←</li>
+                    <li class="key">↓</li>
+                    <li class="key">→</li>
+                    <li class="clear line"></li>
+                    <li class="keytit">射击：</li>
+                    <li class="key">S</li>
+                    <li class="keycon">长按1秒释放蓄力</li>
+                    <li class="clear line"></li>
+                    <li class="keytit">炸弹：</li>
+                    <li class="key">A</li>
+                    <li class="clear line"></li>
+                    <li class="keytit">开始：</li>
+                    <li class="key ent">ENTER</li>
+                    <li class="clear"></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <!-- side plane end -->
+
+    <div class="clear"></div>
+
+    <!-- footer start -->
+    <div class="footer">Author:<span class="hilite">fdipzone</span> Ver:<span class="hilite">1.0</span></div>
+    <!-- footer end -->
+
+</div>
+<!-- board end -->
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{margin:0px; background:#000000;}
+
+.board{width:680px;	margin:0px auto;}
+
+.board .header{height:100px; line-height:100px;	text-align:center; color:#FFFF00; font-size:36px;}
+
+.board .gameplane{float:left; position:relative; width:400px; height:640px; margin:0px 10px 20px 20px; border:2px solid #FF9900; display:inline; overflow:hidden;}
+.board .bg0{background:url('../images/bg.jpg');}
+.board .bg1{background:url('../images/bg.jpg');}
+.board .bg2{background:url('../images/bg.jpg');}
+.board .bg3{background:url('../images/bg.jpg');}
+.board .bg4{background:url('../images/bg.jpg');}
+.board .bg5{background:url('../images/bg.jpg');}
+.board .bg6{background:url('../images/bg.jpg');}
+.board .bgover{background:url('../images/bg.jpg');}
+.board .bgclear{background:url('../images/bg.jpg');}
+
+.board .gameplane .op{width:350px;text-align:center; margin:60px auto;}
+.board .gameplane .op .logo{width:350px; height:200px; text-align:center; background:url('../images/logo.png') no-repeat;}
+.board .gameplane .op .info{width:350px; margin-top:160px; color:#DEDEDE; font-size:17px; font-family:Arial; font-weight:bold; text-align:center;}
+.board .gameplane .op .info span{color:#FFFF00;}
+.board .gameplane .gameover{width:350px; text-align:center; margin:150px auto; display:none;}
+.board .gameplane .gameover .tit{color:#FFFFFF; font-size:36px; font-family:Arial; font-weight:bold; letter-spacing:2px;}
+.board .gameplane .gameover .con{margin:85px auto; line-height:50px; color:#FFFF00; font-size:22px; font-family:Arial;}
+.board .gameplane .gameclear{width:350px; text-align:center; margin:150px auto; display:none;}
+.board .gameplane .gameclear .tit{color:#FFFF00; font-size:36px; font-family:Arial; font-weight:bold; letter-spacing:2px;}
+.board .gameplane .gameclear .con{margin-top:85px; color:#FFFFFF; font-size:28px; font-family:Arial; font-weight:bold; line-height:150%; letter-spacing:2px;}
+.board .gameplane .level{width:120px; text-align:center; position:absolute; top:305px; left:140px; color:#FFFFFF; font-size:24px; font-family:Arial; display:none;}
+
+.board .gameplane .fighter{width:50px; height:50px; position:absolute; display:none; background:url('../images/fighter.png') no-repeat;}
+.board .gameplane .fighter_p{width:50px; height:50px; position:absolute; display:none; background:url('../images/fighter_p.png') no-repeat;}
+.board .gameplane .fighter_s{width:50px; height:50px; position:absolute; display:none; background:url('../images/fighter_s.png') no-repeat;}
+.board .gameplane .fighter_sp{width:50px; height:50px; position:absolute; display:none; background:url('../images/fighter_sp.png') no-repeat;}
+.board .gameplane .bomb{width:280px; height:280px; position:absolute; top:180px; left:60px; background:url('../images/bomb.png') no-repeat; z-index:9999; display:none;}
+.board .gameplane .shot1{width:9px; height:30px; position:absolute; background:url('../images/shot.png') no-repeat;}
+.board .gameplane .shot2{width:20px; height:30px; position:absolute; background:url('../images/shot.png') 0px -30px no-repeat;}
+.board .gameplane .shot3{width:31px; height:30px; position:absolute; background:url('../images/shot.png') 0px -60px no-repeat;}
+.board .gameplane .shot4{width:42px; height:30px; position:absolute; background:url('../images/shot.png') 0px -90px no-repeat;}
+.board .gameplane .pileshot{width:50px; height:85px; position:absolute; background:url('../images/pileshot.png') no-repeat;}
+.board .gameplane .destroy{width:48px; height:48px; position:absolute; background:url('../images/destroy.png') no-repeat;}
+.board .gameplane .destroyboss{width:150px; height:150px; position:absolute; background:url('../images/destroy_boss.png') no-repeat;}
+.board .gameplane .element1{width:50px; height:41px; position:absolute; background:url('../images/enemy.png') no-repeat;}
+.board .gameplane .element2{width:50px; height:47px; position:absolute; background:url('../images/enemy.png') 0px -41px no-repeat;}
+.board .gameplane .element3{width:50px; height:32px; position:absolute; background:url('../images/enemy.png') 0px -88px no-repeat;}
+.board .gameplane .element4{width:50px; height:31px; position:absolute; background:url('../images/enemy.png') 0px -120px no-repeat;}
+.board .gameplane .element5{width:50px; height:32px; position:absolute; background:url('../images/enemy.png') 0px -151px no-repeat;}
+.board .gameplane .element11{width:30px; height:23px; position:absolute; background:url('../images/gift.png') no-repeat;}
+.board .gameplane .element12{width:30px; height:23px; position:absolute; background:url('../images/gift.png') 0px -23px no-repeat;}
+.board .gameplane .element13{width:30px; height:23px; position:absolute; background:url('../images/gift.png') 0px -46px no-repeat;}
+.board .gameplane .bullet{width:15px; height:15px; position:absolute; background:url('../images/bullet.png') no-repeat;}
+.board .gameplane .sbullet{width:30px; height:30px; position:absolute; background:url('../images/bossbullet.png') no-repeat;}
+.board .gameplane .boss1{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+.board .gameplane .boss2{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+.board .gameplane .boss3{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+.board .gameplane .boss4{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+.board .gameplane .boss5{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+.board .gameplane .boss6{width:127px; height:169px; position:absolute; background:url('../images/boss1.png') no-repeat;}
+
+.board .sideplane{float:right; width:200px; height:640px; margin:0px 20px 20px 10px; border:2px solid #000000; display:inline;}
+.board .sideplane .score{color:#FFFFFF; font-size:18px; font-family:arial; line-height:40px;}
+.board .sideplane .score p{margin:0px;}
+.board .sideplane .score .fighternum{background:url('../images/fighter_icon.png') no-repeat 0px 11px;}
+.board .sideplane .score .bombnum{background:url('../images/icon.png') no-repeat 2px 11px;}
+.board .sideplane .score .pilenum{background:url('../images/icon.png') no-repeat 2px -27px; height:40px;}
+.board .sideplane .score .hilite{color:#FFFF00; margin-left:10px;}
+.board .sideplane .score .nor{color:#FFFFFF; margin-left:40px;}
+
+.board .sideplane .tips{margin-top:120px;}
+.board .sideplane .tips ul{list-style:none; margin:0px; padding:0px;}
+.board .sideplane .tips ul li{list-style:none; margin:0px; padding:0px;}
+.board .sideplane .tips .title{color:#FFAC00;}
+.board .sideplane .tips .con{margin-top:30px;}
+.board .sideplane .tips .key{float:left; width:26px; height:26px; border:1px solid #FFFFFF; line-height:26px; text-align:center; font-size:14px; color:#FFAC00;}
+.board .sideplane .tips .ent{width:50px;}
+.board .sideplane .tips .up{margin-left:27px; display:inline;}
+.board .sideplane .tips .keytit{float:left; color:#FFFFFF; font-size:14px; line-height:28px;}
+.board .sideplane .tips .keycon{float:left; color:#FFFFFF; font-size:14px; line-height:28px; margin-left:10px;}
+.board .sideplane .tips .line{height:20px;}
+
+.board .footer{line-height:50px; text-align:center; color:#FFFFFF; font-size:16px;}
+.board .footer .hilite{color:#FFFF00;}
+
+.clear{clear:both; overflow:hidden; height:0px;}

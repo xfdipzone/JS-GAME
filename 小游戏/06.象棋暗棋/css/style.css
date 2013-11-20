@@ -1,0 +1,24 @@
+body{margin:0px auto; text-align:center; background:#D2B69A; user-select:none; -moz-user-select:none; -webkit-user-select:none; }
+.header .title{margin:10px 0px 10px 0px; font-size:48px; color:#43311B; font-weight:bold; line-height:60px; text-align:center;}
+.footer{width: 300px; margin:0px auto; text-align:center;}
+.footer .grade{float:left; width:100px;}
+.footer .vs{float:left; width:100px; font-family:"Arial"; font-size:30px; color:#FF0000;}
+.footer .vs p{margin:25px;}
+.footer .grade .img{margin:10px 0px 10px 0px;}
+.footer .grade .img_on{margin:10px 0px 10px 0px;}
+.footer .grade .img img{border:2px solid #D2B69A;}
+.footer .grade .img_on img{border:2px solid #FFFF00;}
+.footer .grade .txt{margin:10px 0px 10px 0px;}
+.footer .win{color:#FF0000; font-weight:bold; font-family:"Arial"; margin:0px;}
+.footer .loss{color:#003B00; font-weight:bold; font-family:"Arial"; margin:0px;}
+.footer .draw{color:#0066CC; font-weight:bold; font-family:"Arial"; margin:0px;}
+.footer .none{display:none;}
+.tips{text-align:center;}
+.tips textarea{width:650px; height:150px; line-height:150%; border:2px solid #3A2A16; padding:5px; background:#dcc2a4; font-size:16px; cursor:default;}
+#init_div{display:none; margin:20px;}
+.clear{clear:both;}
+#board{border:3px solid #3A2A16; text-align:center; margin:0px auto;}
+#board div{float:left; width:82px; height:82px; text-align:center; vertical-align:middle; border:1px solid #3A2A16; background:url('../images/bg.gif');}
+#board div img{margin-top:10px;}
+#board .on{border:1px solid #3A2A16; cursor:pointer; background:url('../images/bg_over.gif');}
+#board .onsel{border:1px solid #3A2A16; cursor:pointer; background:url('../images/bg_sel.gif');}

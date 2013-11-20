@@ -1,0 +1,120 @@
+html{width:100%; height:100%;}
+body{background:#000000 url('../images/gamebg.jpg') no-repeat center center; margin:0px; user-select:none; -moz-user-select:none; -webkit-user-select:none;}
+
+.board{position:absolute; top:50%; left:50%; margin-left:-512px; margin-top:-384px; width:1024px; height:768px;}
+
+.board .topplane{width:1020px; height:100px; margin:0px auto;}
+.board .topplane .levelplane{float:left; width:500px; height:100px; line-height:100px; margin-left:30px; font-size:45px; font-weight:bold; font-family:Arial; color:#FFFF00; text-shadow:3px 3px 3px #999999; display:none;}
+.board .topplane .process{float:right; width:404px; height:100px; margin-right:30px; background:url('../images/sword.png') no-repeat; text-shadow:1px 1px 1px #333333; display:none;}
+.board .topplane .process .timeplane{font-size:18px; font-weight:bold; color:#FFFF00; margin:42px 0px 0px 187px;}
+
+.board .gameplane{width:1020px; height:668px; margin:0px auto;}
+.board .gameplane .cardplane{float:left; width:170px; height:225px; text-align:center;}
+.board .gameplane .card{width:142px; margin:0px auto 0px auto; position:relative;}
+.board .gameplane .card .list{position:absolute;}
+.board .gameplane .card .list img{border:1px solid #DEDEDE; margin-top:9px; -moz-box-shadow: 3px 3px 3px #666666; -webkit-box-shadow: 3px 3px 3px #666666; box-shadow:3px 3px 3px #666666; cursor:pointer;}
+
+.board .tips{position:absolute; top:150px; left:260px; width:500px; height:280px; border:3px solid #FFFFFF; background:#DEDEDE; padding:10px; font-size:14px;border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; -moz-box-shadow: 5px 5px 5px #666666; -webkit-box-shadow: 5px 5px 5px #666666; box-shadow:5px 5px 5px #666666; display:none;}
+.board .tips p{margin:0px; line-height:28px;}
+.board .tips .title{font-weight:bold; color:#FF0000; font-size:18px; margin-bottom:5px;}
+.board .tips .btn{text-align:center; margin-top:30px;}
+.board .tips .btn a{text-decoration:none; width:100px; height:30px; line-height:30px; text-align:center; color:#FFFFFF; font-size:18px; background:#FF0000; margin:10px auto; padding:7px; border-radius:5px; -moz-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius:5px; -moz-box-shadow: 3px 3px 3px #666666; -webkit-box-shadow: 3px 3px 3px #666666; box-shadow:3px 3px 3px #666666;}
+.board .tips .btn a:hover{text-decoration:none; color:#FFFF00;}
+
+.board .message_start{position:absolute; top:390px; left:0px; width:364px; height:90px; background:url('../images/start.png') no-repeat; display:none;}
+
+.board .message_success{position:absolute; top:390px; left:0px; width:364px; height:90px; background:url('../images/success.png') no-repeat; display:none;}
+
+.board .message_fail{position:absolute; top:390px; left:0px; width:364px; height:90px; background:url('../images/fail.png') no-repeat; display:none;}
+
+.board .message_clear{position:absolute; top:390px; left:0px; width:364px; height:90px; background:url('../images/clear.png') no-repeat; display:none;}
+
+.board .footer{line-height:50px; text-align:center; color:#FFFFFF; font-size:16px;}
+.board .footer .hilite{color:#FFFF00;}
+
+.clear{clear:both; height:0px;}
+
+
+/** animate start **/
+.in {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 350ms;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 350ms;
+}
+.out {
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 225ms;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 225ms;
+}
+
+.viewport-flip {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    position: absolute;
+}
+
+.flip {
+    -webkit-backface-visibility:hidden;
+    -webkit-transform:translateX(0); 
+    -moz-backface-visibility:hidden;
+    -moz-transform:translateX(0);
+}
+.flip.out {
+    -webkit-transform: rotateY(-90deg) scale(.9);
+    -webkit-animation-name: flipouttoleft;
+    -webkit-animation-duration: 175ms;
+    -moz-transform: rotateY(-90deg) scale(.9);
+    -moz-animation-name: flipouttoleft;
+    -moz-animation-duration: 175ms;
+}
+.flip.in {
+    -webkit-animation-name: flipintoright;
+    -webkit-animation-duration: 225ms;
+    -moz-animation-name: flipintoright;
+    -moz-animation-duration: 225ms;
+}
+.flip.out.reverse {
+    -webkit-transform: rotateY(90deg) scale(.9);
+    -webkit-animation-name: flipouttoright;
+    -moz-transform: rotateY(90deg) scale(.9);
+    -moz-animation-name: flipouttoright;
+}
+.flip.in.reverse {
+    -webkit-animation-name: flipintoleft;
+    -moz-animation-name: flipintoleft;
+}
+@-webkit-keyframes flipouttoleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-90deg) scale(.9); }
+}
+@-moz-keyframes flipouttoleft {
+    from { -moz-transform: rotateY(0); }
+    to { -moz-transform: rotateY(-90deg) scale(.9); }
+}
+@-webkit-keyframes flipouttoright {
+    from { -webkit-transform: rotateY(0) ; }
+    to { -webkit-transform: rotateY(90deg) scale(.9); }
+}
+@-moz-keyframes flipouttoright {
+    from { -moz-transform: rotateY(0); }
+    to { -moz-transform: rotateY(90deg) scale(.9); }
+}
+@-webkit-keyframes flipintoleft {
+    from { -webkit-transform: rotateY(-90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@-moz-keyframes flipintoleft {
+    from { -moz-transform: rotateY(-90deg) scale(.9); }
+    to { -moz-transform: rotateY(0); }
+}
+@-webkit-keyframes flipintoright {
+    from { -webkit-transform: rotateY(90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@-moz-keyframes flipintoright {
+    from { -moz-transform: rotateY(90deg) scale(.9); }
+    to { -moz-transform: rotateY(0); }
+}
+/** animate end */

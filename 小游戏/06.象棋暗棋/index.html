@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>象棋暗棋</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<!-- header start -->
+<div class="header">
+	<p class="title">象棋暗棋</p>
+</div>
+<!-- header end -->
+
+<!-- game board start -->
+<div id="board"></div>
+<!-- game board end -->
+
+<!-- footer start -->
+<div class="footer">
+	<div class="grade">
+		<p id="grade_img1"><img src="images/a1.gif" /></p>
+		<p class="txt">红方:<span id="grade_num1"></span></p>
+		<p class="none" id="grade_res1"></p>
+	</div>
+	<div class="vs">
+		<p>VS</p>
+	</div>
+	<div class="grade">
+		<p id="grade_img2"><img src="images/b1.gif" /></p>
+		<p class="txt">黑方:<span id="grade_num2"></span></p>
+		<p class="none" id="grade_res2"></p>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- footer end -->
+
+<!-- restart btn -->
+<div id="init_div"><input type="button" id="init_btn" value="重新开始"></div>
+<!-- restart btn -->
+
+<!-- tips start -->
+<div class="tips">
+	<textarea readonly>游戏说明:
+1.棋子每方16只, 帅/将(1),車(2),馬(2),炮(2),仕/士(2),相/象(2),兵/卒(5)。
+2.棋子大小关系如下: 帅/将 > 車 > 馬 > 炮 > 仕/士 > 相/象 > 兵/卒
+兵/卒 > 帅/将,但比其他棋子都小。
+3.当任意一方将另一方棋子全部消灭，则为胜利。
+4.当任一方棋子不能行动时，则比较所剩下棋子数，如相同则视为平局，请注意此点。</textarea>
+</div>
+<!-- tips end -->
+
+</body>
+</html>

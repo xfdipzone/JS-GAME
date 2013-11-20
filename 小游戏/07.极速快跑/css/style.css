@@ -1,0 +1,29 @@
+body{margin:0px auto; background:#292929;}
+.header{width:800px; height:120px; background:url('../images/header.jpg') no-repeat; margin:0px auto; border-bottom:5px solid #FFCC00;}
+.footer{width:800px; margin:0px auto; border-top:5px solid #FFCC00;}
+.footer .playerlist{float:left; width:600px;  height:240px; background:#E8E8E8;}
+.footer .playerlist ul{margin:0px; padding:10px 5px 10px 5px; list-style:none;}
+.footer .playerlist ul li{float:left; margin:6px; padding:0px; list-style:none; width:56px; height:56px; border:2px solid #2F8500; background:#6CC700; color:#FFFFFF; text-align:center; font-size:30px; line-height:55px; font-family:Arial; cursor:pointer;}
+.footer .playerlist ul .over{color:#FFFFFF; border:2px solid #0387D9; background:#2CBAFC;}
+.footer .playerlist ul .on{color:#FFFFFF; border:2px solid #FF5E09; background:#FFAE30;}
+.footer .playerlist .tips{float:left; margin:20px 0px 0px 0px; padding-left:11px;}
+.footer .playerlist .tips textarea{width:550px; height:100px; line-height:150%; border:2px solid #2CBAFC; padding:5px; cursor:default; font-size:16px;}
+.footer .btn{float:right; width:200px; height:240px; background:#E8E8E8;}
+.footer .level {margin:25px 0px 0px 20px;}
+.footer .btn .start_btn{width:150px; height:150px; background:url('../images/start.png') no-repeat; margin:20px 0px 0px 20px; cursor:pointer; }
+.footer .btn .start_over_btn{width:150px; height:150px; background:url('../images/start_over.png') no-repeat; margin:20px 0px 0px 20px; cursor:pointer;}
+.footer .btn .go_btn{width:150px; height:150px; background:url('../images/go.png') no-repeat; margin:20px 0px 0px 20px; cursor:pointer; }
+.footer .btn .go_over_btn{width:150px; height:150px; background:url('../images/go_over.png') no-repeat; margin:20px 0px 0px 20px; cursor:pointer;}
+.board{width:800px; height:480px; background:url('../images/bg.jpg'); margin:0px auto; border:0px solid #FFFF00;}
+.board .cheerteam{width:760px; height:120px; background:url('../images/cheerteam.gif') repeat-x 0px 30px; margin:0px auto 10px auto;}
+.board .runway ul{margin:0px; padding:0px; list-style:none;}
+.board .runway ul li{list-style:none; height:43px;}
+.board .runway ul li .runing{float:left; margin-top:4px; width:34px; height:34px; background:url('../images/player.gif') no-repeat;}
+.clear{clear:both;}
+.none{display:none;}
+
+/* player run */
+.run_status1{margin-left:62px; width:34px; height:34px; background:url('../images/run_start1.gif') no-repeat;}
+.run_status2{margin-left:62px; width:34px; height:34px; background:url('../images/run_start2.gif') no-repeat;}
+.run_status3{margin-left:62px; width:34px; height:34px; background:url('../images/run_start3.gif') no-repeat;}
+.running{margin-left:62px; width:34px; height:34px; background:url('../images/running.gif') no-repeat;}
